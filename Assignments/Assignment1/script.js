@@ -10,6 +10,11 @@ function pressed(parameter)
     if(parameter == "submit")
     {
         let v1 = document.getElementById("textbox1").getAttribute("value");
+        if(v1.length == 0)
+        {
+            document.getElementById("output").innerHTML="Please Generate the Secret Key First!";
+            return ;
+        }
         if(v1 == prev) document.getElementById("output").innerHTML= "&#x2705; Your Secret Key is matched!";
         else
         {
