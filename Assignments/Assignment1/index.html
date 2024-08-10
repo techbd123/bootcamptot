@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="script.js"></script> 
+
+</head>
+
+<body class="open-sans-normal">
+
+    <div class="section background-primary">
+        <box class="background-secondary">
+            <div class="alignment">
+                <button id="b1" onclick="generate()"" class="btn-primary">Generate Secret Key</button>
+                <input id="textbox1" type="text" name="text" value="">
+            </div>
+        </box>
+
+        <box class="background-secondary">
+            <div class="alignment">
+                <label><label>
+                <!--<div class="grid-container">
+                    <div class="item1"> <h4>Enter PIN:</h4> </div>
+                    <div class="item2">
+                        <input id="textbox2" type="text" name="text" value="">
+                    </div>
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>  
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>  
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                    <div class="grid-item">0</div>
+                    <div class="grid-item">X</div>
+                    <div class="grid-item">Submit</div>
+                    <div class="grid-item">Clear</div>
+                </div>
+                <div class="item3">
+                    <p>Output</p>
+                </div> -->
+
+                <div class="grid-container">
+                    <div class="item1"> <h4>Enter PIN:</h4> </div>
+                    <div class="item2">
+                        <input id="textbox2" type="text" name="text" value="">
+                    </div>
+                    <div id="n1" onclick="pressed('1')" class="item3 grid-item">1</div>
+                    <div id="n2" onclick="pressed('2')" class="item4 grid-item">2</div>
+                    <div id="n3" onclick="pressed('3')" class="item5 grid-item">3 </div>
+                    <div id="n4" onclick="pressed('4')" class="item6 grid-item">4</div>
+                    <div id="n5" onclick="pressed('5')" class="item7 grid-item">5 </div>
+                    <div id="n6" onclick="pressed('6')" class="item8 grid-item">6</div>
+                    <div id="n7" onclick="pressed('7')" class="item9 grid-item">7</div>
+                    <div id="n8" onclick="pressed('8')" class="item10 grid-item">8</div>
+                    <div id="n9" onclick="pressed('9')" class="item11 grid-item">9</div>
+                    <div id="n0" onclick="pressed('0')" class="item12 grid-item">0</div>
+                    <div id="backspace" onclick="pressed('backspace')" class="item13 grid-item">X</div>
+                    <div id="submit" onclick="pressed('submit')" class="item14 grid-item">Submit</div>
+                    <div id="clear" onclick="pressed('clear')" class="item15 grid-item">Clear</div>
+                    <div id="output" class="item16 otext"></div>
+                </div>
+
+            </div>
+        </box>
+    </div>
+</body>
+
+</html>
