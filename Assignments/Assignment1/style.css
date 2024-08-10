@@ -136,7 +136,7 @@
   @media screen and (max-width: 600px) {
     box {
       width: 95%;
-      height: 350px;
+      height: 360px;
       padding: auto;
       display: flex;
       gap: 50px;

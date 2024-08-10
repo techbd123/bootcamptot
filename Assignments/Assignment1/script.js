@@ -13,6 +13,7 @@ function pressed(parameter)
         if(v1.length == 0)
         {
             document.getElementById("output").innerHTML="Please Generate the Secret Key First!";
+            document.getElementById("textbox2").focus();
             return ;
         }
         if(v1 == prev) document.getElementById("output").innerHTML= "&#x2705; Your Secret Key is matched!";
@@ -20,6 +21,7 @@ function pressed(parameter)
         {
             document.getElementById("output").innerHTML="&#x274E; Your Secret Key is NOT matched!";
         }
+        document.getElementById("textbox2").focus();
         return ;
     }
     if(parameter == "backspace")
@@ -35,4 +37,5 @@ function pressed(parameter)
         if(prev.length < 6) prev += "" + parameter;
     }
     document.getElementById("textbox2").setAttribute("value", prev);
+    document.getElementById("textbox2").focus();
 }
