@@ -27,7 +27,7 @@ function pressed(parameter)
     }
     else 
     {
-        prev += "" + parameter;
+        if(prev.length < 6) prev += "" + parameter;
     }
     document.getElementById("textbox2").setAttribute("value", prev);
 }
